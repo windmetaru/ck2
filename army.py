@@ -10,7 +10,6 @@ class Army(object):
 		
 # In order, Light Inf, Heavy Inf, Archers, Light Cav, Heavy Cav, Pikemen
 
-
 armyTypes = {"Light Infantry" : random.randint(1000, 3000) * 3,
 			 "Heavy Infantry" : random.randint(300, 800),
 			 "Archers" : random.randint(400, 900),
@@ -22,7 +21,5 @@ armyTypes = {"Light Infantry" : random.randint(1000, 3000) * 3,
 print("LI: {0}, HI: {1}, AR: {2}, LC: {3}, HC: {4}, PI: {5}".format(
 armyTypes["Light Infantry"], armyTypes["Heavy Infantry"], armyTypes["Archers"],
 armyTypes["Light Cavalry"], armyTypes["Heavy Cavalry"], armyTypes["Pikemen"]))
-
-
 
 print("TOTAL: {0}".format(sum(armyTypes.values())))
