@@ -33,13 +33,12 @@ armyTypes = {"Light Infantry" : random.randint(1000, 3000) * 3,
 			 "Heavy Cavalry" : random.randint(200, 600),
 			 "Pikemen" : random.randint(100, 400)
 			}
-
+"""
 print("LI: {0}, HI: {1}, AR: {2}, LC: {3}, HC: {4}, PI: {5}".format(
 armyTypes["Light Infantry"], armyTypes["Heavy Infantry"], armyTypes["Archers"],
 armyTypes["Light Cavalry"], armyTypes["Heavy Cavalry"], armyTypes["Pikemen"]))
-
-print("TOTAL: {0}".format(sum(armyTypes.values())))
-
+"""
 print(Army(armyTypes["Light Infantry"], armyTypes["Heavy Infantry"], armyTypes["Archers"],
 	 armyTypes["Light Cavalry"], armyTypes["Heavy Cavalry"], armyTypes["Pikemen"]
 	 ))
+print("Total          = ({0})".format(sum(armyTypes.values())))
